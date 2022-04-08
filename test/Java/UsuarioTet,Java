@@ -1,0 +1,25 @@
+ackage padroesestruturais.adapter;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class Usuario {
+
+    @Test
+    void deveRetornarpoupancaUsuario() {
+        Usuario Usuario = new Usuario();
+        Usuario.setUsuario("A");
+
+        assertEquals("A", Usuario.getConta());
+    }
+
+    @Test
+    void deveRetornarContaPoupanca() {
+        Usuario Usuario = new Usuario();
+        Usuario.setConta("A");
+
+        assertEquals( Usuario.getNota());
+    }
+
+}
