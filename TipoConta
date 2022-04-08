@@ -1,0 +1,16 @@
+package padroesestruturais.adapter;
+
+public class TipoConta implements Conta {
+
+    private String poupanca;
+
+    @Override
+    public String getConta() {
+        return this.poupanca;
+    }
+
+    @Override
+    public void setconta(String poupanca) {
+        this.poupanca = poupanca;
+    }
+}
